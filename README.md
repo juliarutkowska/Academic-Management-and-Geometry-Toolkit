@@ -1,30 +1,65 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/fKdthuT2)
-# Lab 04: Tablice
+# Academic Management & Geometry Toolkit (C++ CLI Project)
 
-| Termin oddania | Punkty     |
-|----------------|:-----------|
-|    29.12.2024 23:00 |   10        |
+This is a console-based C++ project developed as part of coursework at the Polish-Japanese Academy of Information Technology (PJATK). The application consists of two modules:
 
---- 
-Przekroczenie terminu o **n** zajęć wiąże się z karą:
-- punkty uzyskanie za realizację zadania są dzielone przez **2<sup>n</sup>**.
+- **Geometry Toolkit** – handles 2D point operations
+- **Student Record System** – simulates a basic academic database with student and grade management
 
---- 
-## Zadanie 1 [4 pkt]
-1. Zaimplementuj strukturę, reprezentującą punkty na płaszczyźnie w kartezjańskim układzie współrzędnych. 
-Prócz reprezentacji współrzędnych punktu, stuktura powinna posiadać metodę `toString` o funkcjonalności podobnej do prezentowanej na wykładzie.
-1. Dla tak przygotowanej struktury napisać funkcję:
-   - obliczającą odległość dla dwóch zadanych punktów
-   - sprawdzającą czy trzy punkty tworzą trójkąt z zadaną dokładnością
-   - dla zbioru (tablicy) punktów na płaszczyźnie wskazać punkty nabardziej oddalone od siebie.
+It demonstrates key programming concepts such as structures, arrays, basic algorithms, and CLI-based CRUD logic.
 
-## Zadanie 2 [6 pkt]
-Wykorzystując funkcje, tablice i struktury napisać program modelujący następującą sytuację:
-1. Dziekanat posiada rejestr studentów. Każdy student posiada numer, imię, nazwisko, bieżący semestr i dla każdego semestru listę przedmiotów do zaliczenia.
-Przedmiot składa się z nazwy, punktów ECTS i listy ocen uzyskanych z tego przemiotu. Program powinien umożliwiać operacje CRUD na powyższych danych (CRUD = Create, Read, Update, Delete).
-2. Dziekanat potrzebuje funkcji pozwalających:
-   - zaliczyć studentowi bieżący semestr i przenieść na kolejny (co zrobić z absolwentami?)
-   - przygotować listę rankingową studentów do przyznania stypendiów (oceny z przedmiotów są ważone punktami ECTS)
-3. Po zakończonej sesji dziekanat przygotowuje statystyki sesji:
-   - dla każdego przedmiotu rozkład ocen zarówno podstawowych jak i poprawkowych
-   - dla każdego studenta średnie semestrów i przedmiotów.
+---
+
+## 🚀 Features
+
+### 📐 Geometry Toolkit
+- Define and display 2D Cartesian points
+- Compute the distance between two points
+- Check if three points form a valid triangle
+- Identify the two most distant points in a given array
+
+### 🎓 Student Record System
+- Add, view, update, and delete student entries
+- Assign subjects with ECTS and multiple grades
+- Calculate ECTS-weighted GPA per student
+- Promote students to the next semester (or mark as graduated)
+- Display a GPA-based ranking of all students
+
+---
+
+## 🛠️ Technologies
+
+- C++ (Standard Library)
+- CLI (Command Line Interface)
+- Procedural and structural programming
+
+---
+
+## 🎓 Academic Context
+
+This project was implemented as part of **Lab 04 – Arrays and Structures** during the first year of Computer Science Engineering at PJATK Gdańsk.  
+It focuses on practical use of:
+
+- `struct` definitions
+- Arrays and `std::vector`
+- Function design
+- Basic user interaction with `cin` / `cout`
+
+---
+
+## 🧪 Example CLI Menu
+
+Menu:
+
+1. Add Student
+
+2. View Student
+
+3. Delete Student
+
+4. Promote to Next Semester
+
+5. Show Student GPA
+
+6. Show Student Ranking
+
+7. Exit
